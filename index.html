@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+	<script>
+	function isPrime(num){
+	var tester =0; //if number is not prime
+	 for(var i=2; i<=num/2; i++)
+	 {
+		if(num%i==0)
+		{
+			tester=1;
+			break;
+		}
+	 }
+	 if(tester===0){
+		return true;
+	 }
+	 else{
+		return false;
+	 }
+	}
+	console.log(isPrime(97));
+	console.log(isPrime(98));
+	</script>
+	</body>
+</html>
